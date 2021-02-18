@@ -15,7 +15,7 @@ class Layout extends Component {
                     <Route path="/cat" component={Category}/>
                     <Route path="/to-do" component={Todo}/>
                     <Route path="/" exact component={Home}/>
-                    <Redirect from="/"  to={Home}/>
+                    {/* <Redirect from="/"  to={Home}/> */}
                 </Switch>
             </div>
         )
