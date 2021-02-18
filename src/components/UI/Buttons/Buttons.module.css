@@ -1,0 +1,12 @@
+.btn {
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 15px;
+    outline: none;
+}
+
+.btnDanger {
+    color: #FFF;
+    background-color: #E91E63;
+    border: 1px solid #E91E63
+}
