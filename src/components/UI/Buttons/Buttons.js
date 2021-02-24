@@ -6,6 +6,9 @@ const button = (props) => {
         case 'danger':
             btnClasses.push(style.btnDanger);
             break;
+        case 'sucess':
+            btnClasses.push(style.btnSuccess);
+            break;
     
         default:
             break;

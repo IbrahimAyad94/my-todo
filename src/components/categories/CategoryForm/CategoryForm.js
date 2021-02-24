@@ -13,7 +13,8 @@ import Button from '../../UI/Buttons/Buttons';
                 name="name"
                 placeholder="Type Category Name "
             />
-            <Button btnType="danger" onClick={props.onSave}>Save</Button>
+            <Button btnType="sucess" onClick={props.onSave}>Save</Button>
+            <Button btnType="danger" onClick={props.onCancel}>Cancel</Button>
         </div>
     )
 }

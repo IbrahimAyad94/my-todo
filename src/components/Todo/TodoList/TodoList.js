@@ -1,13 +1,14 @@
 import React from 'react'
 import style from './TodoList.module.css';
 import { FaTrash, FaRegEdit, FaUserGraduate } from "react-icons/fa";
+import Card from '../../../hoc/Card/Card';
 
 const todoList = (props) => {
 
     const todoCards = (props.list && props.list.length > 0) ? props.list.map(it => {
         const styleObj = it.status === "Done" ? { textDecoration: 'line-through' } : null;
         return (
-            <div key={it.id} className={style.CatItem}>
+            <Card key={it.id}>
                 <div className={style['card-header']}>
                     <div>
                         <div style={styleObj}>{it.title}</div>
@@ -33,7 +34,7 @@ const todoList = (props) => {
                     <div style={styleObj}>Category : {it.categoryName}</div>
                     <div style={styleObj}>Status : {it.status}</div>
                 </div>
-            </div>
+            </Card>
         )
     }) : (<div className={[style.CatItem, style.EmptyCard].join(' ')}>
                 Not Found Todo With :)

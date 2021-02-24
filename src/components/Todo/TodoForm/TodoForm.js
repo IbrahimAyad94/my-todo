@@ -40,7 +40,8 @@ const todoForm = (props) => {
                 <textarea value={props.description} onChange={props.onChangeDescription} placeholder="Type Todo Body " />
             </div>
 
-            <Button btnType="danger" onClick={props.onAddTodo}>Save</Button>
+            <Button btnType="sucess" onClick={props.onAddTodo}>Save</Button>
+            <Button btnType="danger" onClick={props.onCancel}>Cancel</Button>
         </div>
     )
 }

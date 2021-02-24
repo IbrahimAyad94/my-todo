@@ -1,20 +1,7 @@
-.Card {
-    border: 1px solid #a79999;
-    min-height: 60px;
-    box-shadow: 2px 2px 2px #eee;
-    margin: 15px auto;
-    border-radius: 5px;
-    padding: 10px;
-    font-weight: bold;
+.CardBody {
     display: flex;
     justify-content: space-between;
-}
-.CatName {
-    
-}
-
-.Actions {
-
+    padding: 10px;
 }
 
 .icon {

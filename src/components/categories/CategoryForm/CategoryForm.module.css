@@ -7,16 +7,16 @@
     padding: 5px;
 }
 
-
 @media (min-width:600px)  {
     .input{
       width: 60%;
   
     }
-  }
-  @media (min-width:1025px)  {
+}
+
+@media (min-width:1025px)  {
     .input{
       width: 50%;
   
     }
-  }
+}

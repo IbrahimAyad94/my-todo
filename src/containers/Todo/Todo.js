@@ -121,6 +121,13 @@ class Todo extends Component {
         localStorage.setItem("TO_DO", JSON.stringify(newTodoList));
     }
 
+    onCancel = () => {
+        this.setState({
+            title: '',
+            description: '',
+            categoryName: '',
+        });
+    }
     render() {
         return (
             <div>
@@ -135,6 +142,7 @@ class Todo extends Component {
                 onChangeDescription={this.onChangeDescription}
 
                 onAddTodo={this.onAddTodo}
+                onCancel={this.onCancel}
                /> 
 
                <hr/>

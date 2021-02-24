@@ -53,6 +53,10 @@ class Category extends Component {
 
     }
 
+    onCancel = () => {
+        this.setState({name: ''})
+    }
+
     render() {
         return (
             <div>
@@ -60,7 +64,7 @@ class Category extends Component {
                     categoryName={this.state.name}
                     changeValue={this.onNameChangeHandler}
                     onSave={this.onSaveCatHandler}
-
+                    onCancel={this.onCancel}
                 />
                 <CategoriesList
                     list={this.state.catList}
