@@ -12,7 +12,6 @@ class Home extends Component {
     }
 
     onChangeInput = (event) => {
-        console.log(event.target.value, event.target.name);
         if (event.target.name == 'price') {
             this.setState({price: event.target.value});
         } else {
@@ -21,7 +20,6 @@ class Home extends Component {
     }
 
     onSave = () => {
-        console.log('save', (this.state.price * this.state.profitRatio) / 100);
         this.setState(prevState => {
             return {
                 myGain: (prevState.profitRatio * prevState.price) / 100,
@@ -40,7 +38,6 @@ class Home extends Component {
         return (
             <div className="container" dir="rtl">
                 <div className={style.FormRow}>
-                    {/* <label className={style.Title} htmlFor="price"> سعر المنتج: </label> */}
                     <input
                         type="number"
                         className={style.Input}
@@ -54,7 +51,6 @@ class Home extends Component {
 
 
                 <div className={style.FormRow}>
-                    {/* <label className={style.Title} htmlFor="price"> نسبه الربح: </label> */}
                     <input
                         type="number"
                         className={style.Input}
