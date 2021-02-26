@@ -45,7 +45,7 @@ class Home extends Component {
                         onChange={this.onChangeInput}
                         name="price"
                         id="price"
-                        placeholder="اكتب هنا سعر المنتج"
+                        placeholder="اكتب هنا سعر جمله المنتج"
                     />
                 </div>
 
